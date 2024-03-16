@@ -1,0 +1,28 @@
+name: Release
+on:
+  release:
+    types:
+      - published
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: GreenTF/upload-thunderstore-package@v4.2
+        with:
+          token: ${{ secrets.THUNDERSTORE_TOKEN }}
+          community: "lethal-company"
+          namespace: Renaud11232
+          repo: thunderstore.io
+          name: "Belirium_LC_Fun"
+          description: "Fun ModPack for the Belirium Studio"
+          version: ${{ github.ref_name }}
+          website: https://github.com/Renaud11232/Belirium_LC_Fun
+          categories: |
+            modpacks
+          deps: |
+            RugbugRedfern-Skinwalkers@4.0.3
+            KoderTeh-Boombox_Controller@1.2.2
+            sunnobunno-YippeeMod@1.2.4
+            x753-More_Suits@1.4.1
+            
