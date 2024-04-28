@@ -21,8 +21,8 @@ jobs:
           categories: |
             modpacks
           deps: |
-            RugbugRedfern-Skinwalkers@4.0.3
-            KoderTeh-Boombox_Controller@1.2.2
+            RugbugRedfern-Skinwalkers@5.0.0
+            KoderTeh-Boombox_Controller@1.2.4
             sunnobunno-YippeeMod@1.2.4
-            x753-More_Suits@1.4.1
+            x753-More_Suits@1.4.3
             
